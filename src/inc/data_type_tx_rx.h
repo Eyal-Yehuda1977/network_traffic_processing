@@ -57,7 +57,7 @@ enum { events_relay=0, logger_relay=1 };
         t.entries     = t_entries;                                    \
         t.skip        = 1;                                            \
         save_stack_trace(&t);                                         \
-        print_stack_trace(&t, 4);                                     \
+        print_stack_trace(&t, 15);				      \
 }
 
 

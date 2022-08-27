@@ -53,10 +53,10 @@ static int __init driver_main_load(void) {
 
 	ret = driver_load();
 	if ( ret != 0  ) {	
-		//error("driver failed loading");
+		_error_("driver failed loading");
 		return ret;
 	}
-	
+
 	_info_("driver loaded"); 
 	return ret;
 }
@@ -65,8 +65,8 @@ static int __init driver_main_load(void) {
 
 static void __exit driver_main_unload(void) {
 
-
 	driver_unload();
+
 	_info_("unloaded"); 
 }
 
